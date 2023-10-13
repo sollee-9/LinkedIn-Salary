@@ -11,12 +11,16 @@ import BusinessCenterIcon from '@mui/icons-material/BusinessCenter';
 import VerticalSplitIcon from '@mui/icons-material/VerticalSplit';
 
 import { db } from "./firebase";
-import firebase from 'firebase/compat/app';
 import {serverTimestamp} from "firebase/firestore";
+import { useSelector } from 'react-redux';
+import { selectUser } from "./features/userSlice"
 
 function Feed() {
   const [input, setInput] = useState("");
   const [posts, setPosts] = useState([]);
+
+  const user = useSelector(selectUser);
+
 
   // create a real time listener to the firebase db 
   useEffect(() => {
@@ -38,10 +42,10 @@ function Feed() {
 
     // push into "posts"
     db.collection("posts").add({
-      name: "SS",
+      name: user.displayName,
       description: "This is a test",
       message: input, 
-      photoUrl: "",
+      photoUrl: user.photoUrl,
       timestamp: serverTimestamp(),
     });
 
@@ -52,7 +56,7 @@ function Feed() {
     <div className="feed">
       <div className="feed__inputContainer">
         <div className="feed__input">
-          <Avatar src="https://placekitten.com/g/250/300" className="sidebar__avatar"/>
+          <Avatar src={user.photoUrl} className="sidebar__avatar"/>
           <form className="feed__form">
             {/* sets value of "input" variable to whatever value is typed in the form input by user */}
             <input 
@@ -77,7 +81,7 @@ function Feed() {
           name={name} 
           description={description} 
           message={message} 
-          photoUrl={photoUrl}/>
+          photoUrl={photoUrl} />
      ))}
     </div>
   )

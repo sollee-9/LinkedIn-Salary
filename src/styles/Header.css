@@ -39,5 +39,88 @@
 
 .header__right {
     display: flex;
-    /* align-items: baseline; */
+    align-items: baseline;
 }
+
+.header__left > img {
+    object-fit: contain; 
+    height: 40px;
+    margin-right: 10px;
+}
+
+.login__right > img {
+    object-fit: contain; 
+}
+
+.avatar__button {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profileCard {
+    background: white;
+    display: flex;
+    z-index: 1000;
+    position: absolute;
+    width: 200px;
+    top: 68px; 
+    left: 67%;
+    border-radius: 5px;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 6px;
+    box-sizing: border-box;   
+}
+
+.profileCard__profile {
+    display: flex;
+    padding: 10px;
+}
+
+.profileCard__profile > h3 {
+    font-size: 15px;
+    margin: 5px 0px 0px 10px;
+}
+
+.profileCard__other {
+    display: flex;
+    flex-direction: column;
+}
+
+.profileCard__other > h3 {
+    font-size: 13px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.profileCard__other > button {
+    font-size: 12px;
+    text-align: left;
+    background: none;
+    border: none;
+    color: #666666;
+    margin: 5px 0px 5px 6px;
+}
+
+.profileCard__other > button:hover {
+    text-decoration: underline;
+}
+
+.profileCard > button {
+    color: #0077B5;
+    font-weight: 600;
+    font-size: 13px;
+    border-radius: 15px;
+    border: solid;
+    background: none;
+    margin: 0px 10px 10px 10px;
+    height: 25px;
+}
+
+.profileCard > button:hover {
+    background: #f1f7ff;
+    color: #274f7a;
+}
+
