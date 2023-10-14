@@ -1,7 +1,6 @@
 .widgets {
-   top: 80px;
    flex: 0.25;
-   position: sticky;
+   top: 80px;
 }
 
 .widgets__news {
@@ -83,6 +82,12 @@
    background-color: rgb(236, 236, 236);
 }
 
+.widgets__sticky {
+   position: sticky;
+   top: 80px;
+   height: fit-content;
+}
+
 .widgets__ad {
    background-color: white;
    border-radius: 8px;
@@ -139,6 +144,7 @@
 .widgets__ad__content_text__bottom {
    text-align: center;
    font-size: 14px;
+   margin: 0px 10px 0px 10px;
 }
 
 .widgets__ad__content_text__bottom > span {
@@ -150,6 +156,7 @@
    flex-direction: column;
    align-items: center;
    width: 100%;
+   margin-bottom: 30px;
 }
 
 .widgets__buttons > span > button {

@@ -2,7 +2,7 @@
    top: 80px;
    position: sticky;
    flex: 0.23;
-   border-radius: 8feed__inputContainerpx;
+   border-radius: 8px;
    text-align: center;
    height: fit-content;
 }

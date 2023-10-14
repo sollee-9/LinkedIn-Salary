@@ -42,44 +42,48 @@ function Widgets() {
                </button>
             </div>
          </div>
-         <div className="widgets__ad">
-            <div className="widgets__ad__top">
-               <p>Ad</p>
-               <MoreHorizIcon />
-            </div>
-            <div className="widgets__ad__content">
-               <p className="widgets__ad__content_text__top">
-                  Get the latest jobs and industry news
-               </p>
-               <div className="widgets__ad__content__imgs">
-                  <Avatar sx={{ width: 55, height: 55, marginRight: "5px" }} />
-                  <img alt="star logo" src={starlogo} />
+         <div className="widgets__sticky">
+            <div className="widgets__ad">
+               <div className="widgets__ad__top">
+                  <p>Ad</p>
+                  <MoreHorizIcon />
                </div>
-               <p className="widgets__ad__content_text__bottom">
-                  {user.displayName}, explore relevent opportunities with{" "}
-                  <span class="bold">Starstagram</span>
-               </p>
-               <button>Follow</button>
+               <div className="widgets__ad__content">
+                  <p className="widgets__ad__content_text__top">
+                     Get the latest jobs and industry news
+                  </p>
+                  <div className="widgets__ad__content__imgs">
+                     <Avatar
+                        sx={{ width: 55, height: 55, marginRight: "5px" }}
+                     />
+                     <img alt="star logo" src={starlogo} />
+                  </div>
+                  <p className="widgets__ad__content_text__bottom">
+                     {user.displayName}, explore relevent opportunities with{" "}
+                     <span class="bold">Starstagram</span>
+                  </p>
+                  <button>Follow</button>
+               </div>
             </div>
-         </div>
-         <div className="widgets__buttons">
-            <span>
-               <button>About</button>
-               <button>Accessibility</button>
-               <button>Help Center</button>
-            </span>
-            <span>
-               <button>Privacy & Terms ▾</button>
-               <button>Ad Choices</button>
-            </span>
-            <span>
-               <button>Advertising</button>
-               <button>Business Services ▾</button>
-            </span>
-            <span>
-               <button>Get the Linkedin app</button>
-               <button>More</button>
-            </span>
+            <div className="widgets__buttons">
+               <span>
+                  <button>About</button>
+                  <button>Accessibility</button>
+                  <button>Help Center</button>
+               </span>
+               <span>
+                  <button>Privacy & Terms ▾</button>
+                  <button>Ad Choices</button>
+               </span>
+               <span>
+                  <button>Advertising</button>
+                  <button>Business Services ▾</button>
+               </span>
+               <span>
+                  <button>Get the Linkedin app</button>
+                  <button>More</button>
+               </span>
+            </div>
          </div>
       </div>
    );
