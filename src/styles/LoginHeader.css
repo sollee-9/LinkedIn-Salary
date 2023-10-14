@@ -1,63 +1,61 @@
 .header__login {
-    background-color: white;
-    position: sticky;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 100%;
-    z-index: 999;
+   background-color: white;
+   position: sticky;
+   top: 0;
+   display: flex;
+   justify-content: space-between;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   width: 100%;
+   z-index: 999;
 }
 
 .header__right__divider {
-    background-color: lightgray;
-    margin-right: 15px;
-    height: 0px;
+   background-color: lightgray;
+   margin-right: 15px;
+   height: 0px;
 }
 
 .header__right__login > button {
-    cursor: pointer;
-    border-radius: 25px;
-    width: 80px;
+   cursor: pointer;
+   border-radius: 25px;
+   width: 80px;
 }
 
-
 .loginheader__join {
-    background: none;
-    border: none;
-    font-weight: 550;
-    color: #181818;
+   background: none;
+   border: none;
+   font-weight: 550;
+   color: #181818;
 }
 
 .loginheader__join:hover {
-    background: #f5f5f5;
+   background: #f5f5f5;
 }
 
 .loginheader__signin {
-    background: none;
-    border-color: #0077B5;
-    font-weight: 550;
-    color: #0077B5;
-    border-style: solid;
+   background: none;
+   border-color: #0077b5;
+   font-weight: 550;
+   color: #0077b5;
+   border-style: solid;
 }
 
 .loginheader__signin:hover {
-    background: #f1f7ff;
-    color: #274f7a;
+   background: #f1f7ff;
+   color: #274f7a;
 }
 
 .header__right__login {
-    display: flex;
-    width: 35%;
-    justify-content: space-evenly;
-    margin-right: 10%;
+   display: flex;
+   width: 35%;
+   justify-content: space-evenly;
+   margin-right: 10%;
 }
 
-
 .header__left__login > img {
-    object-fit: contain; 
-    height: 40px;
-    margin-right: 10px;
-    margin-left: 200px;
+   object-fit: contain;
+   height: 40px;
+   margin-right: 10px;
+   margin-left: 200px;
 }

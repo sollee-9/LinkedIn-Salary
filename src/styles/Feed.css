@@ -1,50 +1,73 @@
 .feed {
-    flex: 0.5;
-    margin: 0 20px;
-    margin-top: 17px;
+   flex: 0.52;
+   margin: 0 20px;
 }
 
 .feed__inputContainer {
-    background-color: white;
-    padding: 10px;
-    padding-bottom: 20px;
-    border-radius: 10px;
-    margin-bottom: 20px;
+   background-color: white;
+   padding: 10px;
+   padding-bottom: 20px;
+   border-radius: 8px;
+   border: 1px solid rgb(226, 226, 226);
 }
 
 .feed__input {
-    display: flex; 
-    padding-left: 10px;
-    padding-top: 10px;
+   display: flex;
+   padding-left: 10px;
+   padding-top: 10px;
 }
 
 .feed__form {
-    border: 1px solid gray;
-    border-radius: 30px;
-    display: flex;
-    padding: 10px;
-    color: gray; 
-    margin-left: 15px;
+   border: 1px solid lightgray;
+   border-radius: 30px;
+   display: flex;
+   padding: 10px;
+   color: gray;
+   margin-left: 15px;
+   margin-right: 10px;
 }
 
 .feed__input > form {
-    display: flex; 
-    width: 100%;
+   display: flex;
+   width: 100%;
 }
 
 .feed__input > form > input {
-    border: none;
-    flex: 1; 
-    margin-left: 10px;
-    outline-width: 0;
-    font-weight: 600;
+   border: none;
+   flex: 1;
+   margin-left: 10px;
+   outline-width: 0;
+   font-weight: 600;
 }
 
 .feed__input > form > button {
-    display: none;
+   display: none;
 }
 
 .feed__inputOptions {
-    display: flex;
-    justify-content: space-evenly;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.postDivider {
+   display: flex;
+   margin: 8px 4px 8px 0px;
+   cursor: pointer;
+}
+
+.postDivider::before {
+   flex: 1;
+   content: "";
+   padding: 0.5px;
+   background-color: rgb(193, 193, 193);
+   margin: 9px;
+}
+
+.postDivider > p {
+   font-size: 12px;
+   margin-right: 3px;
+}
+
+.postDivider > h4 {
+   font-size: 12px;
 }
